@@ -1,0 +1,42 @@
+.content{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  search-city-date{
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+  }
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F9FB;
+  border-radius: 5px;
+  margin-top: 23px;
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 87vh;
+  head-main{
+    display: flex;
+    flex-direction: row;
+  }
+  .hotels-map{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    hotels{
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+    }
+    map{
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      height: 73.5vh;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+<div [ngClass]="{'closeMenu': ifOpen}" class="side-menu">
+  <img class="button-menu"
+       src="../../assets/button-menu.png"
+       alt=""
+  (click)="toggleMenu()">
+  <img src="../../assets/arrow-left.svg"
+       alt="" class="arrow-left"
+       (click)="toggleMenu()"
+       [ngClass]="{'close': ifOpen}">
+  <img src="../../assets/arrow-right.svg"
+       alt="" class="arrow-right"
+       (click)="toggleMenu()"
+       [ngClass]="{'open': ifOpen}">
+  <div class="logo-name-menu">
+    <img src="../../assets/logo.svg"
+         alt=""
+         class="logo"
+         [ngClass]="{'open': ifOpen}">
+    <img src="../../assets/full-logo.svg"
+         alt=""
+         class="full-logo"
+         [ngClass]="{'close': ifOpen}">
+  </div>
+
+  <div class="avatar-name-logout">
+    <div class="avatar">
+      <img src="../../assets/avatar.svg" alt="">
+    </div>
+    <div class="name-logout">
+      <div [ngClass]="{'close': ifOpen}">Tobias Van Schnider</div>
+      <div [ngClass]="{'close': ifOpen}">Выйти</div>
+    </div>
+  </div>
+
+  <div class="menu" [ngClass]="{'left-space' : ifOpen}">
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/house.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Главная
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/point.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Бронирование
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/request.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Заявки
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/report.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Отчёты
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/synchro.svg" alt="">
+      </div>
+      <div  [ngClass]="{'close': ifOpen}" class="text-line">
+        Синхронизация
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/docs.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Документы
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/hotels.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Гостинницы
+      </div>
+    </div>
+    <div class="line-menu">
+      <div class="icon-line">
+        <img src="../../assets/settings.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="text-line">
+        Настройки
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-menu" [ngClass]="{'left-space' : ifOpen}">
+    <div class="bottom-line-menu">
+      <div class="bottom-icon-line">
+        <img src="../../assets/messages.svg" alt="">
+        <img src="../../assets/red-point.svg" alt="" class="red-point">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="bottom-text-line">
+        Главная
+      </div>
+    </div>
+    <div class="bottom-line-menu">
+      <div class="bottom-icon-line">
+        <img src="../../assets/comment.svg" alt="">
+      </div>
+      <div [ngClass]="{'close': ifOpen}" class="bottom-text-line">
+        Бронирование
+      </div>
+    </div>
+  </div>
+
+</div>

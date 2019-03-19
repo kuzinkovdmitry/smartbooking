@@ -1,0 +1,35 @@
+.booking-ticket-main-page {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #F8F9FB;
+  position: relative;
+  head-booking-ticket {
+    background-color: #EEEEEE;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main-booking-ticket {
+    background-color: #F8F9FB;
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+  footer-back-to-apartment {
+    margin-top: 168px;
+  }
+}
+/deep/ .scroll-to-top {
+  button {
+    top: 80% !important;
+    right: 50px !important;
+    color: green;
+    line-height: 20px;
+    position: fixed;
+    border-radius: 8px !important;
+    border: none !important;
+    background-color: #0058e6 !important;
+  }
+}

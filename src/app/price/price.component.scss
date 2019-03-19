@@ -1,0 +1,156 @@
+.price {
+  padding-left: 13%;
+  padding-right: 13%;
+  padding-top: 77px;
+  .price-head {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
+    padding-right: 4%;
+    padding-bottom: 10px;
+    .head-include, .head-number, .head-date, .head-status {
+      display: flex;
+      flex: 1.2;
+      flex-direction: column;
+    }
+    .head-number {
+      flex: 1;
+    }
+    .head-include {
+      p {
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        color: #8B8B8B;
+        line-height: 15px;
+      }
+    }
+    .head-number, .head-date, .head-status {
+      p:first-child {
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        color: #8B8B8B;
+      }
+    }
+    .head-number, .head-date {
+      p:last-child {
+        font-family: CeraPro-Medium;
+        font-size: 14px;
+        color: #202330;
+      }
+    }
+    .head-status {
+      p:last-child {
+        font-family: CeraPro-Medium;
+        font-size: 14px;
+        color: #62AD8F;
+      }
+    }
+  }
+  .price-main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 336px;
+    .price-main-left {
+      display: flex;
+      flex: 1;
+      background-color: #EEEEEE;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding-top: 27px;
+      flex-direction: column;
+      align-items: center;
+      .top-season, .top-percent, .middle-season, .middle-percent, .bottom-season, .bottom-percent {
+        font-family: CeraPro-Medium;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .top-season, .top-percent {
+        color: #E44343;
+      }
+      .middle-season, .middle-percent {
+        color: #62AD8F;
+      }
+      .bottom-season, .bottom-percent {
+        color: #E1BE41;
+      }
+      .may {
+        margin-top: 17px;
+      }
+      .may, .june, .july, .august {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #202330;
+        line-height: 30px;
+      }
+    }
+    .price-main-right {
+      display: flex;
+      flex: 3;
+      flex-direction: column;
+      background-color: #F8F9FB;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 0 4% 21px 2%;
+      .right-top, .right-middle, .right-bottom {
+        display: flex;
+        flex: 1;
+      }
+      .right-top, .right-middle, .right-bottom {
+        border-bottom: 1px solid #C4C4C4;
+        padding-top: 27px;
+        .standart, .foreigner, .citizen {
+          display: flex;
+          flex: 1.23;
+          flex-direction: column;
+        }
+        .standart {
+          flex: 1;
+          padding-left: 1.5%;
+          .person-block {
+            display: flex;
+            flex-direction: row;
+            img {
+              margin-left: 3.5px;
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+          .main-text {
+            margin-top: 13px;
+            .standart-text {
+              font-family: CeraPro-Medium;
+              font-size: 14px;
+              color: #000000;
+              line-height: 19px;
+            }
+          }
+        }
+        .foreigner, .citizen {
+          p:first-child {
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #8B8B8B;
+          }
+          p:last-child {
+            font-family: CeraPro-Medium;
+            font-size: 18px;
+            color: #62AE90;
+            margin-top: 18px;
+          }
+        }
+      }
+      .right-middle {
+        padding-top: 17px;
+      }
+      .right-bottom {
+        padding-top: 17px;
+        border-bottom: none;
+
+      }
+    }
+  }
+}

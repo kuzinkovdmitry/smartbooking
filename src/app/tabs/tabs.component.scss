@@ -1,0 +1,100 @@
+/deep/ p-tabView {
+  .ui-tabview {
+    padding: 0;
+    .ui-tabview-panels {
+      border: none;
+      background-color: #EEEEEE;
+    }
+    .ui-tabview-nav {
+      display: flex;
+      flex-direction: row;
+      padding-left: 50px !important;
+      padding-right: 10% !important;
+      li {
+        transition: none !important;
+      }
+      li:before, li:after, li a:before, li a:after{
+        position: absolute;
+        bottom: 0;
+      }
+      li:last-child:after, li:last-child a:after,
+      li:first-child:before, li:first-child a:before {
+        content: "";
+      }
+      li:before, li:after {
+        background: #62AE90;
+        width: 10px;
+        height: 10px;
+      }
+      li:before {
+         left: -10px;
+       }
+      li:after {
+        right: -10px;
+      }
+      li a:after, li a:before {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background: #F8F9FB;
+        z-index: 2;
+      }
+      li:first-child a:before {
+        left: -20px;
+      }
+      li:last-child a:after {
+        right: -20px;
+      }
+      li a:before {
+        left: -22px;
+      }
+      li a:after {
+        right: -22px;
+      }
+
+      .ui-state-default {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        background-color: #62AE90 !important;
+        border: none !important;
+        cursor: pointer !important;
+        border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+        outline: none !important;
+
+        a {
+          color: #F8F9FB !important;
+          font-family: CeraPro-Medium !important;
+          font-size: 14px !important;
+        }
+      }
+
+      .ui-tabview-selected:after, .ui-tabview-selected:before,
+      .ui-tabview-selected a:after, .ui-tabview-selected a:before {
+        content: "";
+      }
+      .ui-tabview-selected:before, .ui-tabview-selected:after {
+        background: #EEEEEE;
+        z-index: 1;
+      }
+      .ui-tabview-selected a:after, .ui-tabview-selected a:before {
+        background: #62AE90;
+      }
+      li:first-child.ui-tabview-selected a:before, li:last-child.ui-tabview-selected a:after {
+        background: #F8F9FB;
+      }
+
+      .ui-tabview-selected {
+        background-color: #EEEEEE !important;
+        z-index: 3 !important;
+        a {
+          color: #202330 !important;
+        }
+      }
+    }
+    .ui-tabview-panels {
+      padding-bottom: 91px;
+    }
+  }
+}

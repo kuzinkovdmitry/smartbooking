@@ -1,0 +1,25 @@
+.hotel-content{
+  width: 100%;
+  .head-hotel{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #F8F9FB;
+    order-head{
+      background-color: #EEEEEE;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main-hotel{
+      display: flex;
+      flex-direction: row;
+      padding: 45px 24px 45px 50px;
+    }
+    similar-hotels {
+      background-color: #F8F9FB;
+    }
+  }
+}

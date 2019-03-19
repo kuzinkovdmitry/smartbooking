@@ -1,0 +1,748 @@
+.main-print-block {
+  width: 100%;
+  padding-top: 21px;
+  padding-left: 20%;
+  padding-right: 20%;
+  .print-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .print-button {
+      color: #F8F9FB;
+      background-color: #0062FF;
+      font-family: OpenSans-Semibold;
+      font-size: 12px;
+      height: 35px;
+      width: 143px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+    .show-map {
+      cursor: pointer;
+      font-family: OpenSans-Regular;
+      font-size: 12px;
+      color: #0062FF;
+    }
+  }
+  .main-print {
+    margin-top: 21px;
+    border: 1px solid #8B8B8B;
+    .head-main-print {
+      background-color: #202330;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 85px;
+      align-items: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      p {
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        color: #F8F9FB;
+      }
+    }
+    .name-address-block {
+      padding-top: 68px;
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: auto;
+      padding-left: 10%;
+      padding-bottom: 27px;
+      border-bottom: 1px solid #C4C4C4;
+      .ooo-operator {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        p {
+          margin: 0;
+        }
+        .ooo {
+          display: flex;
+          flex-direction: column;
+          .head-ooo {
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #202330;
+          }
+          .name-ooo {
+            font-family: CeraPro-Medium;
+            font-size: 18px;
+            color: #62AE90;
+            margin-top: 7px;
+          }
+        }
+        .operator {
+          display: flex;
+          flex-direction: column;
+          margin-top: 15px;
+          .head-operator {
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+          }
+          .name-operator {
+            font-family: CeraPro-Medium;
+            font-size: 14px;
+            color: #62AE90;
+            margin-top: 6px;
+          }
+        }
+      }
+      .name-address {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        p {
+          margin: 0;
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+          .head-name {
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #202330;
+          }
+          .name-name {
+            font-family: CeraPro-Medium;
+            font-size: 18px;
+            color: #202330;
+            margin-top: 7px;
+          }
+        }
+        .address {
+          display: flex;
+          flex-direction: column;
+          margin-top: 15px;
+          .head-address {
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+          }
+          .name-address-top, .name-address-bottom {
+            font-family: CeraPro-Medium;
+            font-size: 14px;
+            color: #202330;
+          }
+          .name-address-top {
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+    .mark-number-site {
+      padding-top: 38px;
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: auto;
+      padding-left: 10%;
+      padding-bottom: 38px;
+      .mark-phone, .number, .site {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .head-mark-number-site {
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #8B8B8B;
+          padding-bottom: 3px;
+        }
+        .text-mark-number-site {
+          font-family: CeraPro-Medium;
+          font-size: 14px;
+          color: #202330;
+        }
+      }
+      .mark-phone {
+        .phone {
+          margin-top: 22px;
+        }
+      }
+    }
+    .info-about-booking-block {
+      background-color: #EEEEEE;
+      padding-top: 48px;
+      padding-bottom: 35px;
+      .info-about-booking {
+        width: 90%;
+        margin: auto;
+        .info-booking-head {
+          display: flex;
+          flex-direction: row;
+          padding-left: 10%;
+          align-items: center;
+          .info-booking-text {
+            font-family: CeraPro-Medium;
+            font-size: 18px;
+            color: #202330;
+          }
+          img {
+            margin-left: 21px;
+            cursor: pointer;
+          }
+        }
+        .info-booking-line {
+          display: flex;
+          flex-direction: row;
+          padding-left: 10%;
+          margin-top: 22px;
+          &:first-child {
+            margin-top: 42px;
+          }
+          .line-block {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding-left: 5px;
+            &:first-child {
+              padding-left: 0;
+            }
+            p {
+              margin: 0;
+            }
+            .line-head {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+            }
+            .line-text {
+              font-family: CeraPro-Medium;
+              font-size: 14px;
+              color: #202330;
+              margin-top: 6px;
+            }
+          }
+        }
+        .last-line {
+          padding-top: 17px;
+          padding-bottom: 29px;
+          background-color: #DDE6E3;
+          border-bottom: 1px solid #C4C4C4;
+          .last-block {
+            position: relative;
+          }
+          .last-block:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #DDE6E3 transparent;
+            position: absolute;
+            top: -24px;
+            left: 0;
+          }
+        }
+      }
+      .info-booking-down {
+        margin-top: 35px;
+        padding-left: 14%;
+        padding-right: 14%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        p {
+          margin: 0;
+        }
+        .sum-head {
+          display: flex;
+          flex: 1;
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #8B8B8B;
+        }
+        .sum-price {
+          display: flex;
+          flex: 1.7;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: space-between;
+          .taxes-block {
+            display: flex;
+            flex-direction: column;
+            .taxes-head {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+            }
+            .taxes-price {
+              font-family: CeraPro-Medium;
+              font-size: 14px;
+              color: #202330;
+              margin-top: 6px;
+            }
+          }
+          .all-price {
+            font-family: CeraPro-Medium;
+            font-size: 24px;
+            color: #62AE90;
+          }
+        }
+      }
+    }
+    .choose-apartment-block {
+      background-color: #F8F9FB;
+      padding: 48px 14% 46px 14%;
+      .choose-apartment {
+        &-head {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .choose-text {
+            font-family: CeraPro-Medium;
+            font-size: 18px;
+            color: #202330;
+          }
+          img {
+            margin-left: 21px;
+            cursor: pointer;
+          }
+        }
+        &-line {
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 27px;
+          padding-top: 25px;
+          border-bottom: 1px solid #C4C4C4;
+          p {
+            margin: 0;
+          }
+          .left-line {
+            display: flex;
+            flex: 2;
+            flex-direction: column;
+            .number-type {
+              display: flex;
+              flex-direction: row;
+              font-family: CeraPro-Medium;
+              .number-line {
+                font-size: 14px;
+                color: #8B8B8B;
+                width: 25px;
+              }
+              .type {
+                font-size: 14px;
+                color: #202330;
+                span {
+                  color: #62AE90;
+                }
+              }
+            }
+            .choose-line-bed {
+              margin-left: 25px;
+              display: flex;
+              flex-direction: row;
+              margin-top: 16px;
+              .line-img-block {
+                width: 40px;
+              }
+              .type-of-bed {
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #202330;
+              }
+            }
+            .choose-line-guest {
+              margin-left: 25px;
+              display: flex;
+              flex-direction: row;
+              margin-top: 10px;
+              .line-img-block {
+                width: 40px;
+                img:last-child {
+                  margin-left: 5px;
+                }
+              }
+              .line-guests-count {
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #202330;
+              }
+              .line-guests-name {
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #8B8B8B;
+                margin-left: 15px;
+              }
+            }
+          }
+          .right-line {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: flex-end;
+            .price-one-night {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+            }
+            .right-line-price {
+              margin-top: 16px;
+              font-family: CeraPro-Medium;
+              font-size: 18px;
+              color: #62AE90;
+            }
+            .right-breakfast {
+              margin-top: 10px;
+              display: flex;
+              flex-direction: row;
+              img {
+                margin-right: 8px;
+              }
+              .breakfast-text {
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #8B8B8B;
+              }
+            }
+          }
+        }
+        .choose-apartment-line:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+        .first-choose-line {
+          margin-top: 44px;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .modal-window-booking {
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    &:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .all-modal-booking {
+      display: flex;
+      flex-direction: column;
+      width: 428px;
+      border-radius: 6px;
+      position: absolute;
+      top: 34%;
+      left: 63%;
+      transform: translate(-50%, -50%);
+      padding: 42px 22px 45px 22px;
+      background: #F8F9FB;
+      color: #333333;
+      .modal-close {
+        color: #aaa;
+        line-height: 50px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 57px;
+        text-decoration: none;
+        img {
+          cursor: pointer;
+        }
+      }
+      .info-booking-modal {
+        display: flex;
+        flex-direction: row;
+        &-left, &-right {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          .modal-date-text {
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+          }
+          .modal-date-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 155px;
+            border-radius: 6px;
+            background-color: inherit;
+            border: 1px solid #C4C4C4;
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #0062FF;
+          }
+        }
+        &-right {
+          margin-left: 75px;
+          button {
+            color: #F8F9FB;
+            background-color: #0062FF;
+            font-family: OpenSans-Semibold;
+            font-size: 12px;
+            height: 35px;
+            width: 155px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  .modal-window-apartment {
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    padding-bottom: 120px;
+    &:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .all-modal-apartment {
+      display: flex;
+      flex-direction: column;
+      width: 569px;
+      border-radius: 6px;
+      position: relative;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 14px 14px 6px;
+      background: #F8F9FB;
+      color: #333333;
+      margin-top: 21px;
+      @media only screen and (max-width: 1400px)  {
+        left: 60%;
+      }
+      &:first-child {
+        margin-top: 0;
+        button {
+          background-color: #0062FF !important;
+        }
+      }
+      .modal-close {
+        color: #aaa;
+        line-height: 50px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 57px;
+        text-decoration: none;
+        img {
+          cursor: pointer;
+        }
+      }
+      .head-modal-apartment {
+        display: flex;
+        flex-direction: row;
+        .head-apartment-number {
+          font-family: CeraPro-Medium;
+          font-size: 14px;
+          color: #8B8B8B;
+        }
+        .head-apartment-text {
+          font-family: CeraPro-Medium;
+          font-size: 14px;
+          color: #202330;
+          margin-left: 15px;
+        }
+        .head-apartment-text-num {
+          font-family: CeraPro-Medium;
+          font-size: 14px;
+          color: #62AE90;
+          margin-left: 5px;
+        }
+      }
+      .main-modal-apartment {
+        display: flex;
+        flex-direction: row;
+        &-left, &-right {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+        }
+        &-left {
+          margin-left: 31px;
+          .amount {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            .amount-left, .amount-right {
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              .amount-text {
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #8B8B8B;
+                margin: 0;
+              }
+              .amount-number-block {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 35px;
+                border-radius: 6px;
+                border: 1px solid #C4C4C4;
+                align-items: center;
+                padding-left: 8px;
+                padding-right: 8px;
+                margin-top: 10px;
+                .amount-number {
+                  display: flex;
+                  flex: 1;
+                  font-family: OpenSans-Semibold;
+                  font-size: 14px;
+                  color: #0062FF;
+                  justify-content: flex-end;
+                  height: 100%;
+                  margin: 0;
+                  align-items: center;
+                }
+                .amount-images {
+                  display: flex;
+                  flex: 1;
+                  flex-direction: column;
+                  height: 60%;
+                  justify-content: space-between;
+                  align-items: flex-end;
+                  padding-right: 8px;
+                }
+              }
+            }
+            .amount-right {
+              margin-left: 21px;
+            }
+          }
+          .modal-breakfast-block {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            align-items: center;
+            height: 22px;
+            p {
+              margin-left: 9px;
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+            }
+          }
+        }
+        &-right {
+          margin-left: 20px;
+          .name-surname-head {
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+            margin: 0;
+          }
+          input {
+            margin-top: 10px;
+            height: 35px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            background-color: #EEEEEE;
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #202330;
+            padding-left: 10px;
+          }
+          .right-bottom {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            .bottom-left, .bottom-right {
+              display: flex;
+              flex: 1;
+            }
+            .bottom-left {
+              flex-direction: column;
+              p:first-child {
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #8B8B8B;
+                margin: 0;
+              }
+              p:last-child {
+                font-family: CeraPro-Medium;
+                font-size: 18px;
+                color: #62AE90;
+                margin-top: 14px;
+                margin-bottom: 7px;
+              }
+            }
+            .bottom-right {
+              margin-left: 30px;
+              align-items: flex-end;
+              button {
+                color: #F8F9FB;
+                background-color: #C0C0C0;
+                font-family: OpenSans-Semibold;
+                font-size: 12px;
+                height: 35px;
+                width: 100%;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    .save-changes {
+      color: #F8F9FB;
+      background-color: #0062FF;
+      font-family: OpenSans-Semibold;
+      font-size: 12px;
+      height: 35px;
+      width: 175px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      position: relative;
+      top: 10%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      justify-content: center;
+      @media only screen and (max-width: 1400px)  {
+        left: 60%;
+      }
+    }
+  }
+}
+.toggleMenuBooking {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.toggleMenuApartment {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}

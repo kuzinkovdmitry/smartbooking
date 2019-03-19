@@ -1,0 +1,291 @@
+.main-write-review {
+  padding: 64px 9% 50% 3%;
+  .content-write-review {
+    margin-top: 47px;
+    .head-list {
+      display: flex;
+      flex-direction: row;
+      font-family: CeraPro-Medium;
+      color: #8B8B8B;
+      font-size: 14px;
+      @media only screen and (max-width: 1340px)  {
+        font-size: 13px;
+      }
+      @media only screen and (max-width: 1271px)  {
+        font-size: 12px;
+      }
+      @media only screen and (max-width: 1165px)  {
+        font-size: 11px;
+      }
+      .head-name {
+        display: flex;
+        flex-direction: row;
+        flex: 1.7;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 13px;
+          margin-top: 5px;
+          margin-left: 10px;
+          @media only screen and (max-width: 1271px)  {
+            margin-left: 4px;
+          }
+        }
+      }
+      .head-number-group, .head-number-booking, .head-date-in, .head-date-out {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+      .head-sum {
+        display: flex;
+        flex: 1.5;
+        justify-content: center;
+      }
+      .head-status {
+        display: flex;
+        flex: 1.5;
+        justify-content: center;
+      }
+    }
+    .main-list {
+      margin-top: 17px;
+      list-style-type: none;
+      padding: 0;
+      .main-list-line {
+        display: flex;
+        flex-direction: row;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: #F8F9FB;
+        border-radius: 6px;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        margin-top: 6px;
+        @media only screen and (max-width: 1165px)  {
+          font-size: 12px;
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+        .list-name {
+          display: flex;
+          flex: 1.7;
+          justify-content: center;
+          align-items: center;
+          color: #202330;
+        }
+        .list-number-group, .list-number-booking, .list-date-in, .list-date-out {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          border-left: 1px solid #C4C4C4;
+          color: #202330;
+        }
+        .list-number-group {
+          color: #0062FF;
+        }
+        .list-sum {
+          display: flex;
+          flex: 1.5;
+          justify-content: center;
+          border-left: 1px solid #C4C4C4;
+          color: #202330;
+        }
+        .list-status {
+          display: flex;
+          flex: 1.5;
+          justify-content: center;
+          border-left: 1px solid #C4C4C4;
+          color: #0062FF;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
+
+  .modal-window {
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    &:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .all-modal {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      border-radius: 6px;
+      position: absolute;
+      top: 50%;
+      left: 53%;
+      transform: translate(-50%, -50%);
+      padding: 27px 21px 25px 21px;
+      background: #F8F9FB;
+      color: #333333;
+      .modal-close {
+        color: #aaa;
+        line-height: 50px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 57px;
+        text-decoration: none;
+        img {
+          cursor: pointer;
+        }
+      }
+      .name-hotel {
+        font-family: CeraPro-Medium;
+        font-size: 18px;
+        color: #62AE90;
+        text-align: center;
+      }
+      .modal-booking-number {
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        color: #0062FF;
+        text-align: center;
+        margin-top: 5px;
+        @media only screen and (max-width: 1164px)  {
+          font-size: 11px;
+        }
+      }
+      .modal-main-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        .modal-left, .modal-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          flex: 1;
+          .text-area {
+            margin-top: 18px;
+            width: 100%;
+            height: 76px;
+            resize: none;
+            background-color: #EEEEEE;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            padding-top: 6px;
+            padding-left: 15px;
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #202330;
+            @media only screen and (max-width: 1182px)  {
+              font-size: 11px;
+            }
+          }
+          .title-img {
+            margin-top: 27px;
+            font-family: CeraPro-Medium;
+            font-size: 12px;
+            color: #202330;
+            @media only screen and (max-width: 1182px)  {
+              font-size: 11px;
+            }
+          }
+          .modal-mark {
+            width: 100%;
+          }
+        }
+        .modal-left {
+          .left-like {
+            display: flex;
+            flex-direction: row;
+            .what-like {
+              font-family: CeraPro-Medium;
+              font-size: 12px;
+              color: #202330;
+              margin-left: 10px;
+              @media only screen and (max-width: 1182px)  {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+        .modal-right {
+          margin-left: 21px;
+          position: relative;
+          .right-like {
+            display: flex;
+            flex-direction: row;
+            .what-no-like {
+              font-family: CeraPro-Medium;
+              font-size: 12px;
+              color: #202330;
+              margin-left: 10px;
+              @media only screen and (max-width: 1182px)  {
+                font-size: 11px;
+              }
+            }
+          }
+          .look-rule {
+            display: flex;
+            flex-direction: row;
+            margin-top: 27px;
+            .look {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #0062FF;
+              @media only screen and (max-width: 1182px)  {
+                font-size: 11px;
+              }
+            }
+            img {
+              margin-left: 10px;
+              width: 8px;
+            }
+          }
+          .terms-conditions {
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+            margin-top: 8px;
+            position: absolute;
+            bottom: 0;
+            span {
+              color: #0062FF;
+            }
+            @media only screen and (max-width: 1182px)  {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      .modal-button-send {
+        color: #F8F9FB;
+        background-color: #0062FF;
+        font-family: OpenSans-Semibold;
+        font-size: 12px;
+        height: 35px;
+        width: 150px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        margin: auto;
+        margin-top: 31px;
+      }
+    }
+  }
+}
+.toggleMenu {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}

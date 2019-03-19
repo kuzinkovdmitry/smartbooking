@@ -1,0 +1,36 @@
+@font-face {
+  font-family: CeraPro-Medium;
+  src: url(../assets/fonts/CeraPro-Medium.ttf);
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Semibold;
+  src: url(../assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+side-menu {
+  display: flex;
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 9999;
+}
+
+router-outlet {
+  padding-left: 219.92px;
+}
+
+not-found, accepted, accepting{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #F8F9FB;
+  align-items: center;
+  justify-content: center;
+}
+
+app-hotel, app-main, app-document, menu-review, print, booking-ticket {
+  width: 100%;
+}

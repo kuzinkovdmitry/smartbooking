@@ -1,0 +1,320 @@
+.hotel {
+  height: 241px;
+  @media only screen and (min-width: 1800px)  {
+    height: 260px;
+  }
+  @media only screen and (min-width: 2000px)  {
+    height: 290px;
+  }
+  @media only screen and (min-width: 2200px)  {
+    height: 320px;
+  }
+}
+.hotel, .hotel-two{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #62AE90;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  .hotel-img{
+    display: flex;
+    flex: 1;
+    background-color: #EEEEEE;
+    flex-direction: column;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    .favorite{
+      position: absolute;
+      right: -1px;
+      top: 0;
+    }
+    .plus{
+      position: absolute;
+      right: 7px;
+      top: 6px;
+    }
+    .photo-hotel{
+      margin-left: -0.5%;
+      width: 101%;
+    }
+    .img-info{
+      display: flex;
+      flex-direction: row;
+      height: 36px;
+      width: 94%;
+      margin-left: 2%;
+      margin-top: 5px;
+      .rate, .comment{
+        background-color: white;
+        display: flex;
+        margin-left: 2%;
+        border-radius: 3px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+      }
+      .rate{
+        flex: 1;
+        flex-direction: row;
+        .rate-logo, .rate-mark{
+          display: flex;
+          flex: 1;
+          justify-content: center;
+        }
+        .rate-logo{
+          img{
+            width: 50%;
+          }
+        }
+        .rate-mark{
+          background-color: #62AE90;
+          color: #F8F9FB;
+          align-items: center;
+          font-size: 18px;
+          font-family: CeraPro-Medium;
+        }
+
+      }
+      .comment{
+        flex: 2;
+        flex-direction: row;
+        .comment-img{
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          img{
+            width: 60%;
+          }
+        }
+        .comment-marks{
+          display: flex;
+          flex: 2;
+          flex-direction: column;
+          justify-content: center;
+          div{
+            color: #202330;
+            font-size: 12px;
+            text-align: center;
+            font-family: OpenSans-Regular;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+  .hotel-info{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .hotel-name, .hotel-icon, .hotel-text{
+      display: flex;
+    }
+    .hotel-name{
+      flex: 2;
+      flex-direction: column;
+      justify-content: flex-start;
+      .hotel-name-top{
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        div:first-child{
+          color: #202330;
+          font-size: 21px;
+          font-family: CeraPro-Medium;
+        }
+        img{
+          margin-left: 15px;
+        }
+      }
+      .hotel-name-bottom{
+        img{
+          width: 18%;
+        }
+      }
+    }
+    .hotel-icon{
+      flex: 1;
+      margin-top: 10px;
+    }
+    .hotel-text{
+      flex: 5;
+      flex-direction: column;
+      margin-top: 10px;
+      .hotel-text-list{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-items: center;
+        img{
+          width: 3.5%;
+        }
+        div{
+          margin-left: 10px;
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #202330;
+        }
+        &:last-child{
+          color: #E44343;
+          font-size: 12px;
+          font-family: OpenSans-Regular;
+        }
+      }
+    }
+  }
+  .hotel-price{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    div{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .price-for-night, .smart-sale, .discount, .room-left, .button-book{
+      padding-right: 20px;
+    }
+    .price-for-night{
+      flex-direction: column;
+      flex: 1.5;
+      div:first-child{
+        color: #62AE90;
+        font-family: CeraPro-Medium;
+        font-size: 24px;
+        @media only screen and (max-width: 1293px)  {
+          font-size: 20px;
+        }
+      }
+      div:last-child{
+        color: #8B8B8B;
+        font-size: 12px;
+        font-family: CeraPro-Medium;
+        margin-top: 13px;
+      }
+    }
+    .smart-sale{
+      flex: 1.5;
+      margin-top: 10px;
+      align-items: center;
+      div{
+        display: flex;
+        border-radius: 3px;
+        background-color: #DAEAE6;
+        color: #62AE90;
+        font-family: CeraPro-Medium;
+        font-size: 12px;
+        letter-spacing: 1px;
+        align-items: center;
+        text-align: center;
+        width: 54%;
+        height: 24px;
+        justify-content: center;
+        @media only screen and (max-width: 1293px)  {
+          font-size: 9.5px;
+        }
+      }
+    }
+    .discount{
+      flex: 1.5;
+    }
+    .room-left{
+      color: #E44343;
+      font-size: 12px;
+      font-family: OpenSans-Regular;
+      flex: 1.5;
+      align-items: center;
+    }
+    .button-book{
+      flex: 1.5;
+      button{
+        color: #F8F9FB;
+        background-color: #0062FF;
+        font-family: OpenSans-Semibold;
+        font-size: 12px;
+        height: 35px;
+        width: 70%;
+        border-radius: 6px;
+        border: none;
+        @media only screen and (max-width: 1293px)  {
+          font-size: 10px;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.hotel-two{
+  margin-top: 15px;
+  border: none;
+  height: 227px;
+  @media only screen and (min-width: 1800px)  {
+    height: 245px;
+  }
+  @media only screen and (min-width: 2000px)  {
+    height: 270px;
+  }
+  @media only screen and (min-width: 2200px)  {
+    height: 300px;
+  }
+  .comment-marks{
+    margin-top: 2px !important;
+  }
+  .hotel-name{
+    .hotel-name-bottom{
+      display: flex;
+      align-items: end;
+    }
+  }
+  .saled{
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    margin-top: 24px;
+    .icon-saled, .text-saled{
+      display: flex;
+    }
+    .icon-saled{
+      flex: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .text-saled{
+      flex-direction: column;
+      flex: 10;
+      .top-text-saled{
+        color: #E44343;
+        font-size: 14px;
+        font-family: CeraPro-Medium;
+        flex: 1;
+      }
+      .bottom-text-saled{
+        color: #202330;
+        font-size: 12px;
+        font-family: OpenSans-Regular;
+        flex: 2;
+      }
+    }
+  }
+  .price-for-night{
+    justify-content: flex-start !important;
+    div:last-child{
+      margin-top: 0 !important;
+    }
+  }
+  .smart-sale{
+    align-items: flex-start !important;
+  }
+  .button-book{
+    button{
+      color: #F8F9FB !important;
+      background-color: #C0C0C0 !important;
+    }
+  }
+}

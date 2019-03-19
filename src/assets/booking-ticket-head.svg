@@ -1,0 +1,13 @@
+<svg width="673" height="37" viewBox="0 0 673 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M659.875 15H661.625V1H659.875V15ZM662.5 10.6241H670.126C671.23 10.6241 672.126 9.72869 672.126 8.62412V3C672.126 1.89543 671.23 1 670.126 1H662.5V10.6241Z" fill="#C4C4C4"/>
+  <path d="M11 27H660.5" stroke="#C4C4C4"/>
+  <path d="M10.5 27H498" stroke="#62AE90"/>
+  <circle cx="660.5" cy="26.5" r="9.5" fill="#C4C4C4" stroke="#EEEEEE" stroke-width="2"/>
+  <circle cx="660.5" cy="26.5" r="6.5" fill="#F8F9FB"/>
+  <circle cx="10.5" cy="26.5" r="9.5" fill="#62AE90" stroke="#EEEEEE" stroke-width="2"/>
+  <circle cx="335.5" cy="26.5" r="9.5" fill="#62AE90" stroke="#EEEEEE" stroke-width="2"/>
+  <circle cx="335.5" cy="26.5" r="6.5" fill="#F8F9FB"/>
+  <circle cx="10.5" cy="26.5" r="6.5" fill="#F8F9FB"/>
+  <path d="M342.837 6.19761C342.778 4.53423 342.077 2.95843 340.879 1.80229C339.682 0.646157 338.083 0 336.418 0C334.754 0 333.155 0.646157 331.957 1.80229C330.76 2.95843 330.058 4.53423 330 6.19761C330.001 8.27914 330.609 10.3152 331.75 12.0563C332.89 13.7975 334.514 15.168 336.422 16C338.329 15.1668 339.951 13.7958 341.09 12.0547C342.23 10.3137 342.836 8.27826 342.837 6.19761Z" fill="#62AE90"/>
+  <path d="M7 25.8824L10.08 28L14 24" stroke="#62AE90" stroke-width="2"/>
+</svg>

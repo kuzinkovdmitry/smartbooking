@@ -1,0 +1,526 @@
+.main-booking-ticket-block {
+  .head-main-text {
+    font-family: CeraPro-Medium;
+    font-size: 24px;
+    color: #202330;
+    margin-top: 0;
+    margin-left: 4%;
+  }
+  .ticket-main-content {
+    margin-top: 53px;
+    padding-left: 10%;
+    padding-right: 9%;
+    display: flex;
+    flex-direction: row;
+    .left-ticket-block, .right-ticket-block {
+      display: flex;
+      flex-direction: column;
+    }
+    .left-ticket-block {
+      flex: 1;
+      .ticket {
+        display: flex;
+        background-color: #EEEEEE;
+        border-radius: 6px;
+        border: 1px solid #C4C4C4;
+        padding-top: 8px;
+        padding-left: 21px;
+        padding-right: 21px;
+        flex-direction: column;
+        border-bottom: 1px dashed #C4C4C4;
+        position: relative;
+        .left-square, .right-square {
+          position: absolute;
+          height: 50px;
+          width: 30px;
+          background-color: #F8F9FB;
+          bottom: -21px;
+          z-index: 6;
+        }
+        .left-square {
+          left: -31px;
+        }
+        .right-square {
+          right: -31px;
+        }
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          bottom: -17px;
+          width: 35px;
+          height: 35px;
+          border-radius: 35px;
+          background-color: #F8F9Fb;
+          box-shadow: #C4C4C4 0 0 0 1px;
+          z-index: 5;
+        }
+        &:before {
+          left: -19px;
+        }
+        &:after {
+          right: -19px;
+        }
+        .ticket-butik {
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #202330;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .ticket-hotel-name {
+          font-family: CeraPro-Medium;
+          font-size: 18px;
+          color: #202330;
+          margin-top: 2px;
+          margin-bottom: 0;
+        }
+        .ticket-hotel-address {
+          display: flex;
+          flex-direction: row;
+          margin-top: 5px;
+          align-items: center;
+          p {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 14px;
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #0062FF;
+          }
+        }
+        .ticket-date-and-days {
+          margin-top: 25px;
+          display: flex;
+          flex-direction: row;
+          .ticket-date-in, .ticket-date-out, .ticket-days {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            .head-little-block {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+              margin: 0;
+            }
+            .text-little-block {
+              font-family: CeraPro-Medium;
+              font-size: 14px;
+              color: #202330;
+              margin-top: 2px;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .ticket-people-apartment {
+          display: flex;
+          flex-direction: row;
+          margin-top: 22px;
+          padding-bottom: 34px;
+          border-bottom: 1px solid #C4C4C4;
+          .ticket-people, .ticket-apartment {
+            display: flex;
+            flex-direction: column;
+            .head-little-block {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+              margin: 0;
+            }
+            .text-little-block {
+              font-family: CeraPro-Medium;
+              font-size: 14px;
+              color: #202330;
+              margin-top: 2px;
+              margin-bottom: 0;
+            }
+          }
+          .ticket-people {
+            flex: 1;
+          }
+          .ticket-apartment {
+            flex: 2;
+          }
+        }
+        .ticket-total-price-block {
+          margin-top: 23px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 50px;
+          .ticket-sum-text {
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+            margin: 0;
+          }
+          .ticket-sum-total {
+            font-family: CeraPro-Medium;
+            font-size: 24px;
+            color: #62AE90;
+            margin: 0;
+          }
+        }
+      }
+      .ticket-details {
+        display: flex;
+        background-color: #EEEEEE;
+        border-radius: 6px;
+        border-left: 1px solid #C4C4C4;
+        border-right: 1px solid #C4C4C4;
+        border-bottom: 1px solid #C4C4C4;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-top: 28px;
+        padding-bottom: 8px;
+        flex-direction: column;
+        .details-text {
+          margin: 0;
+          text-align: center;
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #8B8B8B;
+        }
+        .details-apartment {
+          background-color: #F8F9FB;
+          width: 96%;
+          margin: auto;
+          margin-top: 18px;
+          border-radius: 6px;
+          position: relative;
+          padding: 31px 10px 14px 14px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          .close-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+          .description-text-and-edit {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: CeraPro-Medium;
+            font-size: 14px;
+            color: #202330;
+            span {
+              color: #62AE90;
+              margin-left: 10px;
+            }
+          }
+          .details-bed {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .details-bed-text {
+              margin-left: 19px;
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #202330;
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+          .details-guests-and-names {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            padding-bottom: 19px;
+            border-bottom: 1px solid #C4C4C4;
+            .details-guests {
+              display: flex;
+              flex-direction: row;
+              .last-person-icon {
+                margin-left: 4px;
+              }
+              .guests-text, .one-guest-text {
+                margin-left: 11px;
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #202330;
+                margin-top: 0;
+                margin-bottom: 0;
+              }
+              .one-guest-text {
+                margin-left: 22px;
+              }
+            }
+            .details-names {
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #8B8B8B;
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+          .details-price-one-night-text {
+            margin-top: 23px;
+            text-align: right;
+            margin-bottom: 0;
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+          }
+          .details-breakfast-price {
+            margin-top: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .details-breakfast {
+              display: flex;
+              flex-direction: row;
+              p {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 10px;
+                font-family: OpenSans-Regular;
+                font-size: 12px;
+                color: #8B8B8B;
+              }
+            }
+            .details-price {
+              margin-top: 0;
+              margin-bottom: 0;
+              font-family: CeraPro-Medium;
+              font-size: 18px;
+              color: #62AE90;
+            }
+          }
+        }
+      }
+    }
+    .right-ticket-block {
+      flex: 1.5;
+      margin-left: 14%;
+      .enter-data-text {
+        font-family: CeraPro-Medium;
+        font-size: 18px;
+        color: #202330;
+        margin: 0;
+      }
+      .inputs-block-top, .inputs-block-middle, .inputs-block-down {
+        display: flex;
+        flex-direction: row;
+        .right-country, .right-name-tour, .right-group, .right-operator-name, .right-document, .right-email {
+          display: flex;
+          flex-direction: column;
+          .input-text {
+            margin: 0;
+            font-family: OpenSans-Regular;
+            font-size: 12px;
+            color: #8B8B8B;
+          }
+          .input-block {
+            margin-top: 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: #EEEEEE;
+            padding-left: 12px;
+            padding-right: 12px;
+            height: 35px;
+            font-family: OpenSans-Regular;
+            font-size: 14px;
+            color: #202330;
+            outline: none;
+            width: 100%;
+          }
+        }
+        .right-country {
+          .country-input {
+            margin-top: 15px;
+            background-color: #EEEEEE;
+            border-radius: 6px;
+            height: 35px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 12px;
+            padding-right: 12px;
+            p {
+              font-family: OpenSans-Regular;
+              font-size: 14px;
+              color: #0062FF;
+            }
+            img {
+              width: 14px;
+            }
+          }
+        }
+        .right-operator-name {
+          input {
+            &::placeholder {
+              color: #8B8B8B;
+            }
+          }
+        }
+        .right-document {
+          .document-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 6px;
+            border: 1px solid #62AE90;
+            height: 35px;
+            margin-top: 33px;
+            p {
+              margin-top: 0;
+              margin-bottom: 0;
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #202330;
+            }
+            .document-close {
+              width: 7px;
+            }
+          }
+        }
+        .right-country, .right-group, .right-document {
+          flex: 1;
+        }
+        .right-name-tour, .right-operator-name, .right-email {
+          flex: 1.8;
+          margin-left: 4%;
+        }
+      }
+      .inputs-block-top {
+        margin-top: 21px;
+      }
+      .inputs-block-middle, .inputs-block-down {
+        margin-top: 38px;
+      }
+      .wishes-block {
+        margin-top: 78px;
+        padding-bottom: 39px;
+        border-bottom: 1px solid #C4C4C4;
+        .wish {
+          font-family: CeraPro-Medium;
+          font-size: 18px;
+          color: #202330;
+          margin: 0;
+        }
+        .wish-input {
+          margin-top: 11px;
+          border: none;
+          border-radius: 6px;
+          background-color: #EEEEEE;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 12px;
+          height: 127px;
+          width: 100%;
+          font-family: OpenSans-Regular;
+          font-size: 14px;
+          color: #202330;
+          outline: none;
+          resize: none;
+          &::placeholder {
+            color: #8B8B8B;
+          }
+        }
+        .input-description {
+          margin-top: 3px;
+          margin-bottom: 0;
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #8B8B8B;
+        }
+        .wish-toggles {
+          display: flex;
+          flex-direction: row;
+          margin-top: 31px;
+          justify-content: flex-start;
+          width: 90%;
+          .wish-dinner, .wish-guide {
+            display: flex;
+            flex: 1;
+            /deep/ mat-slide-toggle {
+              .mat-slide-toggle-label {
+                .mat-slide-toggle-bar {
+                  height: 15px;
+                  width: 28px;
+                  background-color: #C0C0C0;
+                  .mat-slide-toggle-thumb-container {
+                    .mat-slide-toggle-ripple {
+                      display: none;
+                    }
+                  }
+                  .mat-slide-toggle-thumb {
+                    height: 15px;
+                    width: 15px;
+                    margin-top: 3px;
+                    background-color: #E2E2E2;
+                  }
+                }
+              }
+            }
+            /deep/ .mat-checked {
+              .mat-slide-toggle-label {
+                .mat-slide-toggle-bar {
+                  background-color: #AECCFC;
+                  height: 15px;
+                  width: 28px;
+                  .mat-slide-toggle-thumb-container {
+                    .mat-slide-toggle-ripple {
+                      display: none;
+                    }
+                  }
+                  .mat-slide-toggle-thumb {
+                    background-color: #0062FF;
+                    height: 15px;
+                    width: 15px;
+                    margin-top: 3px;
+                  }
+                }
+              }
+            }
+            .wish-toggle-description {
+              margin-top: 0;
+              margin-bottom: 0;
+              margin-left: 18px;
+              font-family: OpenSans-Regular;
+              font-size: 12px;
+              color: #202330;
+            }
+          }
+        }
+      }
+      .list-and-booking {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .right-list {
+          font-family: OpenSans-Regular;
+          font-size: 12px;
+          color: #8B8B8B;
+          list-style-type: none;
+          text-align: left;
+          padding: 0;
+          line-height: 23px;
+          margin-top: 0;
+          margin-bottom: 0;
+          & > li:before {
+            content: "-";
+            margin-right: 3px;
+          }
+        }
+        .right-booking {
+          color: #F8F9FB;
+          background-color: #0062FF;
+          font-family: OpenSans-Semibold;
+          font-size: 12px;
+          height: 35px;
+          width: 143px;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

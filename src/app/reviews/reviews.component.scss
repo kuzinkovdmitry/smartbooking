@@ -1,0 +1,112 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 27%;
+  padding-left: 20%;
+  .review-block-img {
+    position: absolute;
+    top: 54px;
+    width: 54%;
+    display: flex;
+    justify-content: center;
+  }
+  .num-review {
+    text-align: center;
+    color: #202330;
+    font-family: CeraPro-Medium;
+    font-size: 24px;
+    margin-top: 90px;
+  }
+  .comment {
+    display: flex;
+    flex-direction: column;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #C4C4C4;
+    .comment-top {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      height: 60px;
+      .comment-top-left {
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        .comment-avatar {
+          flex: 1;
+          img {
+            width: 50px;
+          }
+        }
+        .comment-name-country {
+          display: flex;
+          flex: 2;
+          flex-direction: column;
+          .comment-name {
+            font-family: CeraPro-Medium;
+            font-size: 18px;
+            color: #000;
+          }
+          .comment-country {
+            display: flex;
+            flex-direction: row;
+            margin-top: 4px;
+            .country-name {
+              font-size: 14px;
+              font-family: OpenSans-Regular;
+              color: #202330;
+              margin-left: 9px;
+            }
+          }
+        }
+      }
+      .comment-top-right {
+        display: flex;
+        align-items: center;
+        .rate-mark {
+          display: flex;
+          height: 36px;
+          width: 36px;
+          background-color: #62AE90;
+          color: #F8F9FB;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          font-family: CeraPro-Medium;
+          border-radius: 3px;
+        }
+      }
+    }
+    .comment-bottom {
+      margin-top: 10px;
+      .comment-date {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #8B8B8B;
+      }
+      .comment-text {
+        color: #000000;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+      }
+    }
+  }
+  .last-comment {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .load-more{
+    color: #F8F9FB;
+    background-color: #0062FF;
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    height: 35px;
+    width: 142.32px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 85px;
+  }
+}

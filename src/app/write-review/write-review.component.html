@@ -1,0 +1,124 @@
+<div class="main-write-review">
+  <div class="content-write-review">
+    <div class="head-list">
+      <div class="head-name">
+        <p class="name-of-hotel">Название объекта</p>
+        <img src="../../assets/arrow-down.svg" alt="">
+      </div>
+      <p class="head-number-booking">Номер брони</p>
+      <p class="head-number-group">Номер группы</p>
+      <p class="head-date-in">Дата заезда</p>
+      <p class="head-date-out">Дата выезда</p>
+      <p class="head-sum">Сумма к оплате</p>
+      <p class="head-status">Статус</p>
+    </div>
+    <ul class="main-list">
+      <li class="main-list-line">
+        <p class="list-name">Kukaldosh</p>
+        <p class="list-number-group">123654789</p>
+        <p class="list-number-booking">210 АК</p>
+        <p class="list-date-in">03.02.2019</p>
+        <p class="list-date-out">03.02.2019</p>
+        <p class="list-sum">2 250 000 000 UZS</p>
+        <a (click)="toggleModal()" class="list-status">Оставить отзыв</a>
+      </li>
+      <li class="main-list-line">
+        <p class="list-name">Kukaldosh</p>
+        <p class="list-number-group">123654789</p>
+        <p class="list-number-booking">210 АК</p>
+        <p class="list-date-in">03.02.2019</p>
+        <p class="list-date-out">03.02.2019</p>
+        <p class="list-sum">1 250 000 000 UZS</p>
+        <a (click)="toggleModal()" class="list-status">Оставить отзыв</a>
+      </li>
+      <li class="main-list-line">
+        <p class="list-name">Kukaldosh</p>
+        <p class="list-number-group">123654789</p>
+        <p class="list-number-booking">210 АК</p>
+        <p class="list-date-in">03.02.2019</p>
+        <p class="list-date-out">03.02.2019</p>
+        <p class="list-sum">250 000 000 UZS</p>
+        <a (click)="toggleModal()" class="list-status">Оставить отзыв</a>
+      </li>
+      <li class="main-list-line">
+        <p class="list-name">Kukaldosh</p>
+        <p class="list-number-group">123654789</p>
+        <p class="list-number-booking">210 АК</p>
+        <p class="list-date-in">03.02.2019</p>
+        <p class="list-date-out">03.02.2019</p>
+        <p class="list-sum">250 000 000 UZS</p>
+        <a (click)="toggleModal()" class="list-status">Оставить отзыв</a>
+      </li>
+      <li class="main-list-line">
+        <p class="list-name">Kukaldosh</p>
+        <p class="list-number-group">123654789</p>
+        <p class="list-number-booking">210 АК</p>
+        <p class="list-date-in">03.02.2019</p>
+        <p class="list-date-out">03.02.2019</p>
+        <p class="list-sum">5 250 000 000 UZS</p>
+        <a (click)="toggleModal()" class="list-status">Оставить отзыв</a>
+      </li>
+      <li class="main-list-line">
+        <p class="list-name">Kukaldosh</p>
+        <p class="list-number-group">123654789</p>
+        <p class="list-number-booking">210 АК</p>
+        <p class="list-date-in">03.02.2019</p>
+        <p class="list-date-out">03.02.2019</p>
+        <p class="list-sum">2 250 000 000 UZS</p>
+        <a (click)="toggleModal()" class="list-status">Оставить отзыв</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="open-modal" class="modal-window" [ngClass]="{'toggleMenu': ifOpenModal}">
+    <div class="all-modal">
+      <a (click)="toggleModal()" title="Close" class="modal-close"><img src="../../assets/close.svg" alt=""></a>
+      <p class="name-hotel">Kukaldosh Hotel</p>
+      <p class="modal-booking-number">123654789</p>
+      <div class="modal-main-content">
+        <div class="modal-left">
+          <div class="left-like">
+            <img src="../../assets/good-smile.svg" alt="">
+            <p class="what-like">Что понравилось?</p>
+          </div>
+          <textarea class="text-area"></textarea>
+          <p class="title-img">Местоположение</p>
+          <img src="../../assets/10-mark.svg" alt="" class="modal-mark">
+          <p class="title-img">Чистота</p>
+          <img src="../../assets/7,5-mark.svg" alt="" class="modal-mark">
+          <p class="title-img">Цена/Качество</p>
+          <img src="../../assets/10-mark.svg" alt="" class="modal-mark">
+          <p class="title-img">Комфорт</p>
+          <img src="../../assets/10-mark.svg" alt="" class="modal-mark">
+        </div>
+        <div class="modal-right">
+          <div class="right-like">
+            <img src="../../assets/bad-smile.svg" alt="">
+            <p class="what-no-like">Что не понравилось?</p>
+          </div>
+          <textarea class="text-area"></textarea>
+          <p class="title-img">Персонал</p>
+          <img src="../../assets/7,5-mark.svg" alt="" class="modal-mark">
+          <p class="title-img">Бесплатный Wi-Fi</p>
+          <img src="../../assets/5-mark.svg" alt="" class="modal-mark">
+          <p class="title-img">Удобства</p>
+          <img src="../../assets/7,5-mark.svg" alt="" class="modal-mark">
+          <div class="look-rule">
+            <p class="look">Посмотреть правила написания отзывов</p>
+            <img src="../../assets/blue-arrow-right.svg" alt="">
+          </div>
+          <p class="terms-conditions">Отправляя отзыв, Вы подтверждаете, что принимаете наши <span>правила и условия</span></p>
+        </div>
+      </div>
+      <button class="modal-button-send">Отправить</button>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+

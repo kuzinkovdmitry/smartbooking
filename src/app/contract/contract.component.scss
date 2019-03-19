@@ -1,0 +1,69 @@
+.contract-main {
+  padding: 64px 9% 342px 3%;
+  .head-contract {
+    display: flex;
+    flex-direction: row;
+    .head-number, .head-hotel, .head-city, .head-status, .head-contract-in, .head-date {
+      display: flex;
+      font-family: CeraPro-Medium;
+      color: #8B8B8B;
+      font-size: 14px;
+    }
+    .head-number, .head-date {
+      flex: 1;
+    }
+    .head-hotel, .head-city, .head-status, .head-contract-in {
+      flex: 2;
+    }
+    .head-number {
+      padding-left: 20px;
+    }
+  }
+  .contract-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
+    .list-line {
+      display: flex;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      background-color: #F8F9FB;
+      margin-top: 6px;
+      border-radius: 6px;
+      font-family: OpenSans-Regular;
+      &:first-child {
+        margin-top: 0;
+      }
+      .list-number, .list-date {
+        display: flex;
+        flex: 1;
+      }
+      .list-hotel, .list-city, .list-status, .list-contract-in {
+        display: flex;
+        flex: 2;
+      }
+      .list-number {
+        padding-left: 20px;
+        color: #8B8B8B;
+        font-size: 14px;
+      }
+      .list-hotel {
+        color: #0062FF;
+        font-size: 14px;
+      }
+      .list-city, .list-status, .list-contract-in, .list-date {
+        color: #202330;
+        font-size: 14px;
+      }
+      .send-request {
+        color: #0062FF;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .active-line {
+      border: 1px solid #E44343;
+    }
+  }
+}

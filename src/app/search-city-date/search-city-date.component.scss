@@ -1,0 +1,42 @@
+.search-all{
+  display: flex;
+  background-color: white;
+  border: 2px solid #62AE90;
+  flex-direction: row;
+  height: 37px;
+  border-radius: 8px;
+  width: 70%;
+  .search-city, .search-date, .search-apartment{
+    border-right: 2px solid #62AE90;
+    display: flex;
+    flex: 3;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #0062FF;
+    align-items: center;
+  }
+  .search-city{
+    padding-left: 15px;
+  }
+  .search-date{
+    justify-content: center;
+  }
+  .search-apartment{
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 20px;
+    fa{
+      font-size: 25px;
+    }
+  }
+  .search-icon{
+    display: flex;
+    flex: 1;
+    background-color: #62AE90;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 25%;
+    }
+  }
+}

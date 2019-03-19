@@ -1,0 +1,130 @@
+.main-accounts {
+  padding: 64px 9% 342px 3%;
+  .head-accounts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    margin: auto;
+    justify-content: space-between;
+    .accounts-year {
+      font-family: CeraPro-Medium;
+      font-size: 24px;
+      color: #62AE90;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .content-accounts {
+    margin-top: 47px;
+    .head-list {
+      display: flex;
+      flex-direction: row;
+      font-family: CeraPro-Medium;
+      color: #8B8B8B;
+      font-size: 14px;
+      @media only screen and (max-width: 1340px)  {
+        font-size: 13px;
+      }
+      @media only screen and (max-width: 1271px)  {
+        font-size: 12px;
+      }
+      @media only screen and (max-width: 1165px)  {
+        font-size: 11px;
+      }
+      .head-name {
+        display: flex;
+        flex-direction: row;
+        flex: 1.7;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 13px;
+          margin-top: 5px;
+          margin-left: 10px;
+          @media only screen and (max-width: 1271px)  {
+            margin-left: 4px;
+          }
+        }
+      }
+      .head-number-account, .head-number-group, .head-number-booking, .head-date-in, .head-date-out {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+      .head-sum {
+        display: flex;
+        flex: 1.5;
+        justify-content: center;
+      }
+      .head-status {
+        display: flex;
+        flex: 1.5;
+        justify-content: center;
+      }
+    }
+    .main-list {
+      margin-top: 17px;
+      list-style-type: none;
+      padding: 0;
+      .main-list-line {
+        display: flex;
+        flex-direction: row;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: #F8F9FB;
+        border-radius: 6px;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        margin-top: 6px;
+        border-left: 5px solid #62AE90;
+        @media only screen and (max-width: 1165px)  {
+          font-size: 12px;
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+        &:nth-child(2) {
+          border-left: 5px solid #E44343;
+          .list-name, .list-number-account, .list-number-booking, .list-date-in, .list-date-out, .list-sum, .list-status {
+            color: #E44343;
+          }
+        }
+        .list-name {
+          display: flex;
+          flex: 1.7;
+          justify-content: center;
+          align-items: center;
+          color: #202330;
+        }
+        .list-number-account, .list-number-group, .list-number-booking, .list-date-in, .list-date-out {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          border-left: 1px solid #C4C4C4;
+          color: #202330;
+        }
+        .list-number-group {
+          color: #0062FF;
+        }
+        .list-sum {
+          display: flex;
+          flex: 1.5;
+          justify-content: center;
+          border-left: 1px solid #C4C4C4;
+          color: #202330;
+        }
+        .list-status {
+          display: flex;
+          flex: 1.5;
+          justify-content: center;
+          border-left: 1px solid #C4C4C4;
+          color: #202330;
+        }
+      }
+
+    }
+  }
+}

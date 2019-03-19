@@ -1,0 +1,13 @@
+.footer-block {
+  height: 84px;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer-text {
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    color: #0062FF;
+    cursor: pointer;
+  }
+}
