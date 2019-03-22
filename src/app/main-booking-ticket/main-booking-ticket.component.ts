@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-booking-ticket.component.scss']
 })
 export class MainBookingTicketComponent implements OnInit {
-
+  ifOpenModalTicket = false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  toggleModalTicket() {
+    this.ifOpenModalTicket = !this.ifOpenModalTicket;
+  }
 }

@@ -7,15 +7,15 @@ import { DragScrollComponent } from 'ngx-drag-scroll/lib';
   styleUrls: ['./similar-hotels.component.scss']
 })
 export class SimilarHotelsComponent implements OnInit {
-  // @ViewChild('nav', {read: DragScrollComponent}) ds: DragScrollComponent;
-  //
-  // moveLeft() {
-  //   this.ds.moveLeft();
-  // }
-  //
-  // moveRight() {
-  //   this.ds.moveRight();
-  // }
+  @ViewChild('nav', {read: DragScrollComponent}) ds: DragScrollComponent;
+
+  moveLeft() {
+    this.ds.moveLeft();
+  }
+
+  moveRight() {
+    this.ds.moveRight();
+  }
   constructor() { }
 
   ngOnInit() {

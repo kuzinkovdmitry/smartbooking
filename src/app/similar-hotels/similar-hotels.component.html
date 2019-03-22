@@ -1,15 +1,20 @@
-<!--<div class="similar-hotels-block">-->
-  <!--<drag-scroll #nav scrollbar-hidden="true">-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-    <!--<div  drag-scroll-item></div>-->
-  <!--</drag-scroll>-->
-  <!--<button (click)="moveLeft()">Left</button>-->
-  <!--<button (click)="moveRight()">Right</button>-->
-<!--</div>-->
+<p class="similar-hotels-text">Похожие гостиницы</p>
+<div class="similar-hotels-block">
+  <drag-scroll #nav scrollbar-hidden="true">
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+    <div  drag-scroll-item></div>
+  </drag-scroll>
+  <button (click)="moveLeft()" class="moveLeft">
+    <img src="../../assets/blue-arrow-left.svg" alt="">
+  </button>
+  <button (click)="moveRight()" class="moveRight">
+    <img src="../../assets/blue-arrow-right.svg" alt="">
+  </button>
+</div>
 

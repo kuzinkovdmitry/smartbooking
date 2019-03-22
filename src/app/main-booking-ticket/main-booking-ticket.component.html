@@ -46,7 +46,7 @@
           <img src="../../assets/red-close.svg" alt="" class="close-icon">
           <div class="description-text-and-edit">
             <p class="details-description-text">Стандартный двухместный номер<span>(1)</span></p>
-            <img src="../../assets/edit.svg" alt="">
+            <img src="../../assets/edit.svg" alt="" (click)="toggleModalTicket()">
           </div>
           <div class="details-bed">
             <img src="../../assets/big-bed.svg" alt="">
@@ -73,7 +73,7 @@
           <img src="../../assets/red-close.svg" alt="" class="close-icon">
           <div class="description-text-and-edit">
             <p class="details-description-text">Стандартный одноместный номер<span>(2)</span></p>
-            <img src="../../assets/edit.svg" alt="">
+            <img src="../../assets/edit.svg" alt="" (click)="toggleModalTicket()">
           </div>
           <div class="details-bed">
             <img src="../../assets/small-bed.svg" alt="">
@@ -83,6 +83,33 @@
             <div class="details-guests">
               <img src="../../assets/person.svg" alt="">
               <p class="one-guest-text">1 гость</p>
+            </div>
+            <p class="details-names">Имя Фамилия, Имя Фамилия</p>
+          </div>
+          <p class="details-price-one-night-text">Цена за 1 ночь</p>
+          <div class="details-breakfast-price">
+            <div class="details-breakfast">
+              <img src="../../assets/breakfeast.svg" alt="">
+              <p>Завтрак включен</p>
+            </div>
+            <p class="details-price">450 000 UZS</p>
+          </div>
+        </div>
+        <div class="details-apartment">
+          <img src="../../assets/red-close.svg" alt="" class="close-icon">
+          <div class="description-text-and-edit">
+            <p class="details-description-text">Стандартный двухместный номер<span>(1)</span></p>
+            <img src="../../assets/edit.svg" alt="" (click)="toggleModalTicket()">
+          </div>
+          <div class="details-bed">
+            <img src="../../assets/big-bed.svg" alt="">
+            <p class="details-bed-text">1 двухспальная кровать</p>
+          </div>
+          <div class="details-guests-and-names">
+            <div class="details-guests">
+              <img src="../../assets/person.svg" alt="">
+              <img src="../../assets/person.svg" alt="" class="last-person-icon">
+              <p class="guests-text">2 гостя</p>
             </div>
             <p class="details-names">Имя Фамилия, Имя Фамилия</p>
           </div>
@@ -162,4 +189,70 @@
       </div>
     </div>
   </div>
+
+  <div id="open-modal-ticket" class="modal-window-ticket" [ngClass]="{'toggleMenuTicket': ifOpenModalTicket}">
+    <div class="all-modal-ticket-first">
+      <a (click)="toggleModalTicket()" title="Close" class="modal-close"><img src="../../assets/red-close.svg" alt=""></a>
+      <div class="description-text-and-edit">
+        <p class="details-description-text">Стандартный двухместный номер<span>(1)</span></p>
+        <img src="../../assets/grey-edit.svg" alt="">
+      </div>
+      <div class="details-bed">
+        <img src="../../assets/big-bed.svg" alt="">
+        <p class="details-bed-text">1 двухспальная кровать</p>
+      </div>
+      <div class="details-guests-and-names">
+        <div class="details-guests">
+          <img src="../../assets/person.svg" alt="">
+          <img src="../../assets/person.svg" alt="" class="last-person-icon">
+          <p class="guests-text">2 гостя</p>
+        </div>
+        <p class="details-names">Имя Фамилия, Имя Фамилия</p>
+      </div>
+      <p class="details-price-one-night-text">Цена за 1 ночь</p>
+      <div class="details-breakfast-price">
+        <div class="details-breakfast">
+          <img src="../../assets/breakfeast.svg" alt="">
+          <p>Завтрак включен</p>
+        </div>
+        <p class="details-price">450 000 UZS</p>
+      </div>
+    </div>
+    <div class="all-modal-ticket-second">
+      <a (click)="toggleModalTicket()" title="Close" class="modal-close"><img src="../../assets/red-close.svg" alt=""></a>
+      <p class="details-description-text-second">Стандартный двухместный номер<span>(1)</span></p>
+      <div class="second-modal-main">
+        <div class="second-modal-left">
+          <p class="left-text">Кол-во гостей</p>
+          <div class="left-block">
+            <p class="number">2</p>
+            <div class="images">
+              <img src="../../assets/arrow-up.svg" alt="">
+              <img src="../../assets/arrow-down.svg" alt="">
+            </div>
+          </div>
+          <p class="left-text last-left-text">Кол-во номеров</p>
+          <div class="left-block">
+            <p class="number">1</p>
+            <div class="images">
+              <img src="../../assets/arrow-up-grey.svg" alt="">
+              <img src="../../assets/arrow-down.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="second-modal-right">
+          <div class="right-text-name">Имя Фамилия гостей</div>
+          <input type="text" class="right-input-name">
+          <div class="right-down-block">
+            <div class="down-block-left">
+              <p class="right-night-text">Цена за 1 ночь</p>
+              <p class="right-price-text">450 000 UZS</p>
+            </div>
+            <button class="down-block-right-button">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
