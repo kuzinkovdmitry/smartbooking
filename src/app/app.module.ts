@@ -49,6 +49,7 @@ import { BookingTicketComponent } from './booking-ticket/booking-ticket.componen
 import { HeadBookingTicketComponent } from './head-booking-ticket/head-booking-ticket.component';
 import { MainBookingTicketComponent } from './main-booking-ticket/main-booking-ticket.component';
 import { FooterBackToApartmentComponent } from './footer-back-to-apartment/footer-back-to-apartment.component';
+import { FooterBackToHotelComponent } from './footer-back-to-hotel/footer-back-to-hotel.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { FooterBackToApartmentComponent } from './footer-back-to-apartment/foote
     BookingTicketComponent,
     HeadBookingTicketComponent,
     MainBookingTicketComponent,
-    FooterBackToApartmentComponent
+    FooterBackToApartmentComponent,
+    FooterBackToHotelComponent
   ],
   imports: [
     GoTopButtonModule,

@@ -297,6 +297,9 @@
     .right-ticket-block {
       flex: 1.5;
       margin-left: 14%;
+      @media only screen and (max-width: 1500px)  {
+        margin-left: 10%;
+      }
       .enter-data-text {
         font-family: CeraPro-Medium;
         font-size: 18px;
@@ -369,6 +372,11 @@
             border: 1px solid #62AE90;
             height: 35px;
             margin-top: 33px;
+            img {
+              @media only screen and (max-width: 1500px)  {
+                width: 20px;
+              }
+            }
             p {
               margin-top: 0;
               margin-bottom: 0;
@@ -387,6 +395,9 @@
         .right-name-tour, .right-operator-name, .right-email {
           flex: 1.8;
           margin-left: 4%;
+          @media only screen and (max-width: 1500px)  {
+            flex: 1.5;
+          }
         }
       }
       .inputs-block-top {
