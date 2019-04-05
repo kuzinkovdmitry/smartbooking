@@ -1,4 +1,4 @@
-<div [ngClass]="{'closeMenu': ifOpen}" class="side-menu">
+<div [ngClass]="{'closeMenu': ifOpen}" *ngIf="showMenu" class="side-menu">
   <img class="button-menu"
        src="../../assets/button-menu.png"
        alt=""

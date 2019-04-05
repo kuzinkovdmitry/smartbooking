@@ -50,6 +50,11 @@ import { HeadBookingTicketComponent } from './head-booking-ticket/head-booking-t
 import { MainBookingTicketComponent } from './main-booking-ticket/main-booking-ticket.component';
 import { FooterBackToApartmentComponent } from './footer-back-to-apartment/footer-back-to-apartment.component';
 import { FooterBackToHotelComponent } from './footer-back-to-hotel/footer-back-to-hotel.component';
+import { FullMapComponent } from './full-map/full-map.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +92,12 @@ import { FooterBackToHotelComponent } from './footer-back-to-hotel/footer-back-t
     HeadBookingTicketComponent,
     MainBookingTicketComponent,
     FooterBackToApartmentComponent,
-    FooterBackToHotelComponent
+    FooterBackToHotelComponent,
+    FullMapComponent,
+    ChangePasswordComponent,
+    PasswordRecoveryComponent,
+    AuthorizationComponent,
+    RegistrationComponent
   ],
   imports: [
     GoTopButtonModule,

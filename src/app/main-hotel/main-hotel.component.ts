@@ -20,6 +20,6 @@ export class MainHotelComponent implements OnInit {
     this.images.push({source: '../../assets/main-hotel.svg', alt: 'Description for Image 1', title: 'Title 1'});
     this.images.push({source: '../../assets/main-hotel.svg', alt: 'Description for Image 1', title: 'Title 1'});
     this.images.push({source: '../../assets/main-hotel.svg', alt: 'Description for Image 1', title: 'Title 1'});
+    console.log(document.getElementsByClassName('ui-galleria-panel-wrapper'));
   }
-
 }

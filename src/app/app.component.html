@@ -1,2 +1,2 @@
-<side-menu (headIfOpen)="receiveMessage($event)"></side-menu>
+<side-menu (headIfOpen)="receiveMessage($event)" *ngIf="showMenu"></side-menu>
 <router-outlet [ngStyle]="{'padding-left': leftPadding}"></router-outlet>

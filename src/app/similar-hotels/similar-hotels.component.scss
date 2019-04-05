@@ -13,10 +13,25 @@
   margin: 0 auto;
   position: relative;
   margin-top: 51px;
+  @media only screen and (min-width: 1600px)  {
+    max-width: 1200px;
+  }
+  @media only screen and (min-width: 1700px)  {
+    max-width: 1300px;
+  }
+  @media only screen and (min-width: 1800px)  {
+    max-width: 1400px;
+  }
+  @media only screen and (min-width: 1920px)  {
+    max-width: 1500px;
+  }
+
   /deep/ drag-scroll {
     width: 100%;
-    height: 167px;
-    padding-top: 10px;
+    height: 200px;
+    padding-top: 22px;
+    border-right: 2px solid #d9d9d9;
+    cursor: pointer;
     .drag-scroll-content {
       overflow: hidden !important;
       padding-top: 5px !important;
@@ -39,6 +54,11 @@
             width: 210px;
             height: 147px;
             position: relative;
+            .hotel-photo {
+              height: 101%;
+              margin-top: -0.3%;
+              margin-left: -0.6%;
+            }
             .left-mark-comment-block {
               position: absolute;
               width: 100%;
@@ -121,7 +141,6 @@
               }
             }
             .right-price {
-              margin-top: 40px;
               font-family: CeraPro-Medium;
               font-size: 18px;
               color: #62AE90;
@@ -143,12 +162,12 @@
   }
   .moveLeft {
     position: absolute;
-    top: 75px;
+    top: 90px;
     left: 9px;
   }
   .moveRight {
     position: absolute;
-    top: 75px;
+    top: 90px;
     right: 9px;
   }
 }

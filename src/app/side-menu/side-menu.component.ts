@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'side-menu',
@@ -7,8 +8,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class SideMenuComponent implements OnInit {
   ifOpen = false;
+  showMenu = true;
   @Output() headIfOpen = new EventEmitter<boolean>();
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

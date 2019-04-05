@@ -9,6 +9,11 @@ import {DocumentComponent} from './document/document.component';
 import {MenuReviewComponent} from './menu-review/menu-review.component';
 import {PrintComponent} from './print/print.component';
 import {BookingTicketComponent} from './booking-ticket/booking-ticket.component';
+import {FullMapComponent} from './full-map/full-map.component';
+import {ChangePasswordComponent} from './change-password/change-password.component';
+import {PasswordRecoveryComponent} from './password-recovery/password-recovery.component';
+import {AuthorizationComponent} from './authorization/authorization.component';
+import {RegistrationComponent} from './registration/registration.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -19,6 +24,11 @@ const routes: Routes = [
   {path: 'menu-review', component: MenuReviewComponent},
   {path: 'print', component: PrintComponent},
   {path: 'booking-ticket', component: BookingTicketComponent},
+  {path: 'full-map', component: FullMapComponent},
+  {path: 'change-password', component: ChangePasswordComponent},
+  {path: 'password-recovery', component: PasswordRecoveryComponent},
+  {path: 'authorization', component: AuthorizationComponent},
+  {path: 'registration', component: RegistrationComponent},
   {path: '**', component: NotFoundComponent}
 ];
 
