@@ -66,8 +66,12 @@ a{
   .block-form{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 126px;
     background-color: #fff;
+    @media screen and (min-width:1600px) {
+      padding-left: 189px;
+    }
     @media screen and (max-width:875px) {
       width: 100%;
     }
